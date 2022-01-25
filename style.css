@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: 'Android';
+  src: url(fontes/idroid.otf)format('opentype');
+  font-weight: normal;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --cor0: #0f753d;
+  --cor1: #83e1ad;
+  --cor2: #3ddc84;
+  --cor3: #5dce90b0;
+  --cor4: #1a5c37;
+  --cor5: #244d35d8;
+
+  --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+  --fonte-destaque: 'Bebas Neue', cursive;
+  --fonte-android: 'android', cursive;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+  background-color: var(--cor4);
+  min-height: 150px;
+  text-align: center;
+  padding-top: 40px;
+  text-shadow: 3px 3px 2px rgb(15 15 15);
+}
+
+header > h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    min-height: 150px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header > p {
+  color: white;
+  font-family: var(--fonte-padrao);
+  font-size: 1.2em;
+  max-width: 600px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: auto;
+}
+
+nav {
+  background-color: var(--cor5);
+  padding: 10px;
+  box-shadow: 0px 7px 9px black;
+}
+
+nav > a{
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  transition-duration: 1s;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav > a:hover{
+  background-color: var(--cor3);
+  color: var(--cor4);
+}
+
+main {
+  background-color: white;
+  min-width: 400px;
+  max-width: 900px;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+main h1{
+  font-family: var(--fonte-android);
+  color: var(--cor5);
+  margin-top: 30px;
+}
+
+main h2 {
+  font-family: var(--fonte-android);
+}
+
+main img {
+  width: 100%;
+}
+
+main img.pequena {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+footer{
+  background-color: var(--cor5);
+  color: white;
+}
